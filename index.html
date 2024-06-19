@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="external.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Validation</title>
+</head>
+<body>
+    <form novalidate autocomplete="off">
+        <p>
+          <label for="mail">
+            <span>Please enter an email address:</span>
+            <input type="email" id="mail" name="mail" required minlength="8" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+
+        <p>
+          <label for="country">
+            <span>Please enter a country:</span>
+            <input type="text" id="country" name="country" required minlength="2" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+
+        <p>
+          <label for="postcode">
+            <span>Please enter a postcode:</span>
+            <input type="text" id="postcode" name="postcode" required minlength="8" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+
+        <p>
+          <label for="password">
+            <span>Please enter a password:</span>
+            <input type="password" id="password" name="password" required minlength="8" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+
+        <div id="password-prompt">
+          <div id="uppercase">
+            Your password must contain Uppercase letters
+          </div>
+          <div id="lowercase">
+            Your password must contain Lowercase letters
+          </div>
+          <div id="numbers">
+            Your password must contain numbers
+          </div>
+        </div>
+
+        <p>
+          <label for="confirmation">
+            <span>Please confirm your password:</span>
+            <input type="password" id="confirmation" name="confirmation" required minlength="8" />
+            <span class="error" aria-live="polite"></span>
+          </label>
+        </p>
+
+        <button>Submit</button>
+      </form>
+      
+      
+</body>
+</html>
